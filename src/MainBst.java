@@ -1,7 +1,6 @@
-
-
 /*
- * UC1-Ability to create a BST by adding 56 and then adding 30 & 70 
+ * UC2-Ability to create the binary tree shown in the figure
+ * they given a figure in UC2
  */
 public class MainBst {
 
@@ -18,7 +17,8 @@ public class MainBst {
 		 * 1. Creating object of MainBst class 
 		 * 2. Adding the sub-nodes of Binary Tree 
 		 * 3. Printing the elements
-		 * 
+		 * 4. to create the binary tree shown in the figure
+		 * 4. Check if all are added with using size method in Binary Tree and print it
 		 */
 
 		/*
@@ -34,11 +34,19 @@ public class MainBst {
 		/*
 		 * 2.inserting the values in the root by calling the insert method
 		 */
-		root = bst.insert(root, 86);
-
+		root = bst.insert(root, 56);
+		root = bst.insert(root, 30);
+		root = bst.insert(root, 70);
+		root = bst.insert(root, 22);
+		root = bst.insert(root, 40);
 		root = bst.insert(root, 60);
-
-		root = bst.insert(root, 20);
+		root = bst.insert(root, 95);
+		root = bst.insert(root, 11);
+		root = bst.insert(root, 65);
+		root = bst.insert(root, 3);
+		root = bst.insert(root, 6);
+		root = bst.insert(root, 63);
+		root = bst.insert(root, 67);
 
 		/*
 		 * 3.here printing the root values
