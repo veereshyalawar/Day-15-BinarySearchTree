@@ -14,8 +14,8 @@ public class BinaryTree {
 	/**
 	 * creating method insert to inserting the node to the BST
 	 * 
-	 * @param root-          root will be the type of left, right and center
-	 * @param val-represents value
+	 * @param root- root will be the type of left, right and center
+	 * @param val- represents value
 	 * @return to create NewNode
 	 */
 
@@ -80,4 +80,45 @@ public class BinaryTree {
 
 	}
 
+	/**
+	 * here we create nodePresent method to check whether our node is present or not
+	 * by checking this we follow here boolean method this is parameterized
+	 * method.root and value are passed boolean type method so this method give o/p
+	 * is true or false type.
+	 * 
+	 * @param root
+	 * @param val
+	 * @return
+	 */
+	public boolean nodePresent(Node root, int val) {
+		/*
+		 * checking condition if root is empty then false
+		 */
+		if (root == null) {
+			return false;
+		}
+		Boolean isPresent = false;
+
+		/*
+		 * if boolean result will be false type below statements are satisfied here in
+		 * while loop taking condition like root is not empty if this is satisfied this
+		 * will entering to the if else statement here comparing if value is lesser than
+		 * root data value then it is pointing to left side or enter to else if part
+		 * here else if value is greater then root data value it is pointing to the
+		 * right side or else both will not happen it simply printing as true
+		 * 
+		 */
+		while (root != null) {
+			if (val < root.data) {
+				root = root.left;
+			} else if (val > root.data) {
+				root = root.right;
+			} else {
+				isPresent = true;
+				break;
+			}
+
+		}
+		return isPresent;
+	}
 }
